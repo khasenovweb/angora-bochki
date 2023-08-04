@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Cartzilla | Fashion Store v.1</title>
+        <!-- SEO Meta Tags-->
+        <meta name="description" content="Cartzilla - Bootstrap E-commerce Template" />
+        <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean" />
+        <meta name="author" content="Createx Studio" />
+        <!-- Viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Favicon and Touch Icons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+        <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
+        <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css" />
+        <link rel="stylesheet" media="screen" href="vendor/drift-zoom/dist/drift-basic.min.css" />
+        <link rel="stylesheet" media="screen" href="vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+        <!-- Main Theme Styles + Bootstrap-->
+        <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+    </head>
+    <!-- Body-->
+    <body class="handheld-toolbar-enabled">
+        <!-- Google Tag Manager (noscript)-->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <!-- Sign in / sign up modal-->
+        <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-secondary">
+                        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium active" href="home-fashion-store-v1.html#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium" href="home-fashion-store-v1.html#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a>
+                            </li>
+                        </ul>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body tab-content py-4">
+                        <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+                            <div class="mb-3">
+                                <label class="form-label" for="si-email">Email address</label>
+                                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required />
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="si-password">Password</label>
+                                <div class="password-toggle">
+                                    <input class="form-control" type="password" id="si-password" required />
+                                    <label class="password-toggle-btn" aria-label="Show/hide password"> <input class="password-toggle-check" type="checkbox" /><span class="password-toggle-indicator"></span> </label>
+                                </div>
+                            </div>
+                            <div class="mb-3 d-flex flex-wrap justify-content-between">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="si-remember" />
+                                    <label class="form-check-label" for="si-remember">Remember me</label>
+                                </div>
+                                <a class="fs-sm" href="home-fashion-store-v1.html#">Forgot password?</a>
+                            </div>
+                            <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+                        </form>
+                        <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+                            <div class="mb-3">
+                                <label class="form-label" for="su-name">Full name</label>
+                                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required />
+                                <div class="invalid-feedback">Please fill in your name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="su-email">Email address</label>
+                                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required />
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="su-password">Password</label>
+                                <div class="password-toggle">
+                                    <input class="form-control" type="password" id="su-password" required />
+                                    <label class="password-toggle-btn" aria-label="Show/hide password"> <input class="password-toggle-check" type="checkbox" /><span class="password-toggle-indicator"></span> </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="su-password-confirm">Confirm password</label>
+                                <div class="password-toggle">
+                                    <input class="form-control" type="password" id="su-password-confirm" required />
+                                    <label class="password-toggle-btn" aria-label="Show/hide password"> <input class="password-toggle-check" type="checkbox" /><span class="password-toggle-indicator"></span> </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="page-wrapper">
+            <!-- Quick View Modal-->
+            <div class="modal-quick-view modal fade" id="quick-view" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title product-title">
+                                <a href="shop-single-v1.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Go to product page">Sports Hooded Sweatshirt<i class="ci-arrow-right fs-lg ms-2"></i></a>
+                            </h4>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Product gallery-->
+                                <div class="col-lg-7 pe-lg-0">
+                                    <div class="product-gallery">
+                                        <div class="product-gallery-preview order-sm-2">
+                                            <div class="product-gallery-preview-item active" id="first">
+                                                <img class="image-zoom" src="img/shop/single/gallery/01.jpg" data-zoom="img/shop/single/gallery/01.jpg" alt="Product image" />
+                                                <div class="image-zoom-pane"></div>
+                                            </div>
+                                            <div class="product-gallery-preview-item" id="second">
+                                                <img class="image-zoom" src="img/shop/single/gallery/02.jpg" data-zoom="img/shop/single/gallery/02.jpg" alt="Product image" />
+                                                <div class="image-zoom-pane"></div>
+                                            </div>
+                                            <div class="product-gallery-preview-item" id="third">
+                                                <img class="image-zoom" src="img/shop/single/gallery/03.jpg" data-zoom="img/shop/single/gallery/03.jpg" alt="Product image" />
+                                                <div class="image-zoom-pane"></div>
+                                            </div>
+                                            <div class="product-gallery-preview-item" id="fourth">
+                                                <img class="image-zoom" src="img/shop/single/gallery/04.jpg" data-zoom="img/shop/single/gallery/04.jpg" alt="Product image" />
+                                                <div class="image-zoom-pane"></div>
+                                            </div>
+                                        </div>
+                                        <div class="product-gallery-thumblist order-sm-1">
+                                            <a class="product-gallery-thumblist-item active" href="home-fashion-store-v1.html#first"><img src="img/shop/single/gallery/th01.jpg" alt="Product thumb" /></a><a class="product-gallery-thumblist-item" href="home-fashion-store-v1.html#second"><img src="img/shop/single/gallery/th02.jpg" alt="Product thumb" /></a><a class="product-gallery-thumblist-item" href="home-fashion-store-v1.html#third"><img src="img/shop/single/gallery/th03.jpg" alt="Product thumb" /></a><a class="product-gallery-thumblist-item" href="home-fashion-store-v1.html#fourth"><img src="img/shop/single/gallery/th04.jpg" alt="Product thumb" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product details-->
+                                <div class="col-lg-5 pt-4 pt-lg-0 image-zoom-pane">
+                                    <div class="product-details ms-auto pb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <a href="shop-single-v1.html#reviews">
+                                                <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i></div>
+                                                <span class="d-inline-block fs-sm text-body align-middle mt-1 ms-1">74 Отзывов</span></a
+                                            >
+                                            <button class="btn-wishlist" type="button" data-bs-toggle="tooltip" title="Добавить в избранное"><i class="ci-heart"></i></button>
+                                        </div>
+                                        <div class="mb-3">
+                                            <span class="h3 fw-normal text-accent me-1">7249 ₽</span> <span class="badge bg-danger badge-shadow align-middle mt-n2">Sale</span>
+                                        </div>
+                                        <div class="fs-sm mb-4"><span class="text-heading fw-medium me-1">Color:</span><span class="text-muted" id="colorOptionText">Red/Dark blue/White</span></div>
+                                        <div class="position-relative me-n4 mb-3">
+                                            <div class="form-check form-option form-check-inline mb-2">
+                                                <input class="form-check-input" type="radio" name="color" id="color1" data-bs-label="colorOptionText" value="Red/Dark blue/White" checked />
+                                                <label class="form-option-label rounded-circle" for="color1"><span class="form-option-color rounded-circle" style="background-image: url(img/shop/single/color-opt-1.png)"></span></label>
+                                            </div>
+                                            <div class="form-check form-option form-check-inline mb-2">
+                                                <input class="form-check-input" type="radio" name="color" id="color2" data-bs-label="colorOptionText" value="Beige/White/Black" />
+                                                <label class="form-option-label rounded-circle" for="color2"><span class="form-option-color rounded-circle" style="background-image: url(img/shop/single/color-opt-2.png)"></span></label>
+                                            </div>
+                                            <div class="form-check form-option form-check-inline mb-2">
+                                                <input class="form-check-input" type="radio" name="color" id="color3" data-bs-label="colorOptionText" value="Dark grey/White/Mustard" />
+                                                <label class="form-option-label rounded-circle" for="color3"><span class="form-option-color rounded-circle" style="background-image: url(img/shop/single/color-opt-3.png)"></span></label>
+                                            </div>
+                                            <div class="product-badge product-available mt-n1"><i class="ci-security-check"></i>Product available</div>
+                                        </div>
+                                        <form class="mb-grid-gutter">
+                                            <div class="mb-3">
+                                                <label class="fw-medium pb-1" for="product-size">Size:</label>
+                                                <select class="form-select" required id="product-size">
+                                                    <option value="">Select size</option>
+                                                    <option value="xs">XS</option>
+                                                    <option value="s">S</option>
+                                                    <option value="m">M</option>
+                                                    <option value="l">L</option>
+                                                    <option value="xl">XL</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 d-flex align-items-center">
+                                                <select class="form-select me-3" style="width: 5rem">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                                <button class="btn btn-primary btn-shadow d-block w-100" type="submit"><i class="ci-cart fs-lg me-2"></i>Add to Cart</button>
+                                            </div>
+                                        </form>
+                                        <h5 class="h6 mb-3 pb-2 border-bottom"><i class="ci-announcement text-muted fs-lg align-middle mt-n1 me-2"></i>Product info</h5>
+                                        <h6 class="fs-sm mb-2">Style</h6>
+                                        <ul class="fs-sm ps-4">
+                                            <li>Hooded top</li>
+                                        </ul>
+                                        <h6 class="fs-sm mb-2">Composition</h6>
+                                        <ul class="fs-sm ps-4">
+                                            <li>Elastic rib: Cotton 95%, Elastane 5%</li>
+                                            <li>Lining: Cotton 100%</li>
+                                            <li>Cotton 80%, Polyester 20%</li>
+                                        </ul>
+                                        <h6 class="fs-sm mb-2">Art. No.</h6>
+                                        <ul class="fs-sm ps-4 mb-0">
+                                            <li>183260098</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar 3 Level (Light)-->
+            <header class="shadow-sm">
+                <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+                <div class="navbar-sticky bg-light">
+                    <div class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <a class="navbar-brand d-none d-sm-block flex-shrink-0" href="index.html"><img src="img/logo-new.png" width="112" alt="Cartzilla" /></a><a class="navbar-brand d-sm-none flex-shrink-0 me-2" href="index.html"><img src="img/logo-icon.png" width="74" alt="Cartzilla" /></a>
+                            <div class="input-group d-none d-lg-flex mx-4"><input class="form-control rounded-end pe-5" type="text" placeholder="Поиск товаров" /><i class="ci-search position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"></i></div>
+                            <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button
+                                ><a class="navbar-tool navbar-stuck-toggler" href="home-fashion-store-v1.html#"
+                                    ><span class="navbar-tool-tooltip">Показать меню</span>
+                                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-menu"></i></div></a
+                                ><a class="navbar-tool d-none d-lg-flex" href="account-wishlist.html"
+                                    ><span class="navbar-tool-tooltip">Избранное</span>
+                                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-heart"></i></div></a
+                                ><a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="home-fashion-store-v1.html#signin-modal" data-bs-toggle="modal">
+                                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div>
+                                    <div class="navbar-tool-text ms-n3"><small>Войти</small>Мой аккаунт</div></a
+                                >
+                                <div class="navbar-tool dropdown ms-3">
+                                    <a class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="shop-cart.html"><span class="navbar-tool-label">4</span><i class="navbar-tool-icon ci-cart"></i></a><a class="navbar-tool-text" href="shop-cart.html"><small>Корзина</small>15000 ₽</a>
+                                    <!-- Cart dropdown-->
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <div class="widget widget-cart px-3 pt-2 pb-3" style="width: 20rem">
+                                            <div data-simplebar data-simplebar-auto-hide="false">
+                                                <div class="widget-cart-item py-2 border-bottom">
+                                                    <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                                                    <div class="d-flex align-items-center">
+                                                        <a class="flex-shrink-0" href="shop-single-v1.html"><img src="/img/shop/catalog/73.png" width="64" alt="Product" /></a>
+                                                        <div class="ps-2">
+                                                            <h6 class="widget-product-title"><a href="shop-single-v1.html">Бочка на 300 литров</a></h6>
+                                                            <div class="widget-product-meta"><span class="text-accent me-2">7249 ₽</span><span class="text-muted">x 2</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                                                <div class="fs-sm me-2 py-2"><span class="text-muted">Итого:</span><span class="text-accent fs-base ms-1">14498 ₽</span></div>
+                                                <a class="btn btn-outline-secondary btn-sm" href="shop-cart.html">Корзина<i class="ci-arrow-right ms-1 me-n1"></i></a>
+                                            </div>
+                                            <a class="btn btn-primary btn-sm d-block w-100" href="checkout-details.html"><i class="ci-card me-2 fs-base align-middle"></i>Оформить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+                        <div class="container">
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <!-- Search-->
+                                <div class="input-group d-lg-none my-3">
+                                    <i class="ci-search position-absolute top-50 start-0 translate-middle-y text-muted fs-base ms-3"></i>
+                                    <input class="form-control rounded-start" type="text" placeholder="Поиск товаров" />
+                                </div>
+                                <!-- Departments menu-->
+                                <ul class="navbar-nav navbar-mega-nav pe-lg-2 me-lg-2">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle ps-lg-0" href="home-fashion-store-v1.html#" data-bs-toggle="dropdown"><i class="ci-view-grid me-2"></i>Категории</a>
+                                        <div class="dropdown-menu px-2 pb-4">
+                                            <div class="d-flex flex-wrap flex-sm-nowrap">
+                                                <div class="mega-dropdown-column pt-3 pt-sm-4 px-2 px-lg-3">
+                                                    <div class="widget widget-links">
+                                                        <a class="d-block overflow-hidden rounded-3 mb-3" href="home-fashion-store-v1.html#"><img src="/img/home/categories/cat-sm04.jpg" alt="Clothing" /></a>
+                                                        <h6 class="fs-base mb-2">Цилиндрические вертикальные</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                                                    <div class="widget widget-links">
+                                                        <a class="d-block overflow-hidden rounded-3 mb-3" href="home-fashion-store-v1.html#"><img src="/img/home/categories/cat-sm05.jpg" alt="Shoes" /></a>
+                                                        <h6 class="fs-base mb-2">Цилиндрические горизонтальные</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                                                    <div class="widget widget-links">
+                                                        <a class="d-block overflow-hidden rounded-3 mb-3" href="home-fashion-store-v1.html#"><img src="/img/home/categories/cat-sm06.jpg" alt="Gadgets" /></a>
+                                                        <h6 class="fs-base mb-2">Прямоугольные</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                                                    <div class="widget widget-links">
+                                                        <a class="d-block overflow-hidden rounded-3 mb-3" href="home-fashion-store-v1.html#"><img src="/img/home/categories/cat-sm07.jpg" alt="Gadgets" /></a>
+                                                        <h6 class="fs-base mb-2">Для подземной установки</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Primary menu-->
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="home-fashion-store-v1.html#" data-bs-toggle="dropdown">Главная</a></li>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="home-fashion-store-v1.html#" data-bs-toggle="dropdown">Контакты</a></li>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="home-fashion-store-v1.html#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Доставка и оплата</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="tel:8 (351) 700-03-13" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="ci-phone me-2"></i>8 (351) 700-03-13</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="tel:8 (351) 200-20-11"><i class="ci-phone me-2"></i>8 (351) 200-20-11</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="tel:8 (922) 730-03-13"><i class="ci-phone me-2"></i>8 (922) 730-03-13</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+            <!-- Page Title-->
+            <div class="page-title-overlap bg-dark pt-4">
+                <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+                    <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
+                                <li class="breadcrumb-item">
+                                    <a class="text-nowrap" href="index.html"><i class="ci-home"></i>Главная</a>
+                                </li>
+                                <li class="breadcrumb-item text-nowrap"><a href="shop-single-v1.html#">Бочки</a></li>
+                                <li class="breadcrumb-item text-nowrap active" aria-current="page">Бочка на 300 литров</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+                        <h1 class="h3 text-light mb-0">Бочка на 300 литров</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Gallery + details-->
+                <div class="bg-light shadow-lg rounded-3 px-4 py-3 mb-5">
+                    <div class="px-lg-3">
+                        <div class="row">
+                            <!-- Product gallery-->
+                            <div class="col-lg-7 pe-lg-0 pt-lg-4">
+                                <div class="product-gallery">
+                                    <div class="product-gallery-preview order-sm-2">
+                                        <div class="product-gallery-preview-item active" id="first">
+                                            <img class="image-zoom" src="img/shop/single/gallery/09.png" data-zoom="img/shop/single/gallery/09.png" alt="Product image" />
+                                            <div class="image-zoom-pane"></div>
+                                        </div>
+                                        <div class="product-gallery-preview-item" id="second">
+                                            <img class="image-zoom" src="img/shop/single/gallery/02.jpg" data-zoom="img/shop/single/gallery/02.jpg" alt="Product image" />
+                                            <div class="image-zoom-pane"></div>
+                                        </div>
+                                        <div class="product-gallery-preview-item" id="third">
+                                            <img class="image-zoom" src="img/shop/single/gallery/03.jpg" data-zoom="img/shop/single/gallery/03.jpg" alt="Product image" />
+                                            <div class="image-zoom-pane"></div>
+                                        </div>
+                                        <div class="product-gallery-preview-item" id="fourth">
+                                            <img class="image-zoom" src="img/shop/single/gallery/04.jpg" data-zoom="img/shop/single/gallery/04.jpg" alt="Product image" />
+                                            <div class="image-zoom-pane"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-gallery-thumblist order-sm-1">
+                                        <a class="product-gallery-thumblist-item active" href="#first">
+                                            <img src="img/shop/single/gallery/09.png" alt="Product thumb" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product details-->
+                            <div class="col-lg-5 pt-4 pt-lg-0">
+                                <div class="product-details ms-auto pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <!-- <a href="shop-single-v1.html#reviews" data-scroll>
+                                            <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i></div>
+                                            <span class="d-inline-block fs-sm text-body align-middle mt-1 ms-1">74 отзывов</span></a
+                                        > -->
+                                        <i></i>
+                                        <button class="btn-wishlist me-0 me-lg-n3" type="button" data-bs-toggle="tooltip" title="Add to wishlist"><i class="ci-heart"></i></button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <span class="h3 fw-normal text-accent me-1">7249 ₽</span>
+                                    </div>
+                                    <div class="fs-sm mb-4"><span class="text-heading fw-medium me-1">Размер:</span><span class="text-muted" id="colorOption">300 л</span></div>
+                                    <form class="mb-grid-gutter" method="post">
+                                        <div class="mb-3 d-flex align-items-center">
+                                            <select class="form-select me-3" style="width: 5rem">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                            <button class="btn btn-primary btn-shadow d-block w-100" type="submit"><i class="ci-cart fs-lg me-2"></i>Добавить в корзину</button>
+                                        </div>
+                                    </form>
+                                    <!-- Product panels-->
+                                    <div class="accordion mb-4" id="productPanels">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <a class="accordion-button" href="shop-single-v1.html#productInfo" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="productInfo"><i class="ci-announcement text-muted fs-lg align-middle mt-n1 me-2"></i>Информация о товаре</a>
+                                            </h3>
+                                            <div class="accordion-collapse collapse show" id="productInfo" data-bs-parent="#productPanels">
+                                                <div class="accordion-body">
+                                                    <h6 class="fs-sm mb-2">Состав</h6>
+                                                    <ul class="fs-sm ps-4">
+                                                        <li>Эластичная резинка: Хлопок 95%, Эластан 5%</li>
+                                                        <li>Подкладка: Хлопок 100%</li>
+                                                        <li>Хлопок 80%, Полиэстер 20%</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <a class="accordion-button collapsed" href="shop-single-v1.html#shippingOptions" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="shippingOptions"><i class="ci-delivery text-muted lead align-middle mt-n1 me-2"></i>Доставка</a>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="shippingOptions" data-bs-parent="#productPanels">
+                                                <div class="accordion-body fs-sm">
+                                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                                        <div>
+                                                            <div class="fw-semibold text-dark">Courier</div>
+                                                            <div class="fs-sm text-muted">2 - 4 days</div>
+                                                        </div>
+                                                        <div>$26.50</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <div>
+                                                            <div class="fw-semibold text-dark">Local shipping</div>
+                                                            <div class="fs-sm text-muted">up to one week</div>
+                                                        </div>
+                                                        <div>$10.00</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <div>
+                                                            <div class="fw-semibold text-dark">Flat rate</div>
+                                                            <div class="fs-sm text-muted">5 - 7 days</div>
+                                                        </div>
+                                                        <div>$33.85</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between border-bottom py-2">
+                                                        <div>
+                                                            <div class="fw-semibold text-dark">UPS ground shipping</div>
+                                                            <div class="fs-sm text-muted">4 - 6 days</div>
+                                                        </div>
+                                                        <div>$18.00</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between pt-2">
+                                                        <div>
+                                                            <div class="fw-semibold text-dark">Local pickup from store</div>
+                                                            <div class="fs-sm text-muted">&mdash;</div>
+                                                        </div>
+                                                        <div>$0.00</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product carousel (Style with)-->
+            <div class="container pt-5 pb-5">
+                <h2 class="h3 text-center pb-4">Похожие товары</h2>
+                <div class="tns-carousel tns-controls-static tns-controls-outside">
+                    <div class="tns-carousel-inner" data-carousel-options='{"items": 2, "controls": true, "nav": false, "responsive": {"0":{"items":1},"500":{"items":2, "gutter": 18},"768":{"items":3, "gutter": 20}, "1100":{"items":4, "gutter": 30}}}'>
+
+                        <!-- Product-->
+                        <div>
+                            <div class="card product-card card-static">
+                                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" aria-label="Добавить в избранное" data-bs-original-title="Добавить в избранное"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/shop/catalog/73.png" alt="Product"></a>
+                                <div class="card-body py-2">
+                                    <a class="product-meta d-block fs-xs pb-1" href="home-fashion-store-v1.html#">Цилиндрические вертикальные</a>
+                                    <h3 class="product-title fs-sm"><a href="shop-single-v1.html">Бочка на 300 литров</a></h3>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="product-price"><span class="text-accent">7249 ₽</span></div>
+                                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-hidden">
+                                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Добавить в корзину</button>
+                                    <div class="text-center">
+                                        <a class="nav-link-style fs-ms" href="home-fashion-store-v1.html#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Быстрый просмотр</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-sm-none">
+                        </div>
+                        <!-- Product-->
+                        <div>
+                            <div class="card product-card card-static">
+                                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Добавить в избранное"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/shop/catalog/74.png" alt="Product" /></a>
+                                <div class="card-body py-2">
+                                    <a class="product-meta d-block fs-xs pb-1" href="home-fashion-store-v1.html#">Цилиндрические вертикальные</a>
+                                    <h3 class="product-title fs-sm"><a href="shop-single-v1.html">Бочка на 750 литров</a></h3>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="product-price"><span class="text-accent">15072 ₽</span></div>
+                                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-hidden">
+                                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Добавить в корзину</button>
+                                    <div class="text-center">
+                                        <a class="nav-link-style fs-ms" href="home-fashion-store-v1.html#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Быстрый просмотр</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-sm-none" />
+                        </div>
+                        <!-- Product-->
+                        <div>
+                            <div class="card product-card card-static">
+                                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Добавить в избранное"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/shop/catalog/73.png" alt="Product" /></a>
+                                <div class="card-body py-2">
+                                    <a class="product-meta d-block fs-xs pb-1" href="home-fashion-store-v1.html#">Цилиндрические вертикальные</a>
+                                    <h3 class="product-title fs-sm"><a href="shop-single-v1.html">Бочка на 300 литров</a></h3>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="product-price"><span class="text-accent">7249 ₽</span></div>
+                                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-hidden">
+                                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Добавить в корзину</button>
+                                    <div class="text-center">
+                                        <a class="nav-link-style fs-ms" href="home-fashion-store-v1.html#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Быстрый просмотр</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-sm-none" />
+                        </div>
+                        <!-- Product-->
+                        <div>
+                            <div class="card product-card card-static">
+                                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Добавить в избранное"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/shop/catalog/73.png" alt="Product" /></a>
+                                <div class="card-body py-2">
+                                    <a class="product-meta d-block fs-xs pb-1" href="home-fashion-store-v1.html#">Цилиндрические вертикальные</a>
+                                    <h3 class="product-title fs-sm"><a href="shop-single-v1.html">Бочка на 300 литров</a></h3>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="product-price"><span class="text-accent">7249 ₽</span></div>
+                                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-hidden">
+                                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Добавить в корзину</button>
+                                    <div class="text-center">
+                                        <a class="nav-link-style fs-ms" href="home-fashion-store-v1.html#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Быстрый просмотр</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-sm-none" />
+                        </div>
+                        <!-- Product-->
+                        <div>
+                            <div class="card product-card card-static">
+                                <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Добавить в избранное"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/shop/catalog/73.png" alt="Product" /></a>
+                                <div class="card-body py-2">
+                                    <a class="product-meta d-block fs-xs pb-1" href="home-fashion-store-v1.html#">Цилиндрические вертикальные</a>
+                                    <h3 class="product-title fs-sm"><a href="shop-single-v1.html">Бочка на 300 литров</a></h3>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="product-price"><span class="text-accent">7249 ₽</span></div>
+                                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-half active"></i><i class="star-rating-icon ci-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-hidden">
+                                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Добавить в корзину</button>
+                                    <div class="text-center">
+                                        <a class="nav-link-style fs-ms" href="home-fashion-store-v1.html#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Быстрый просмотр</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-sm-none" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+            <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        </main>
+        <!-- Footer-->
+        <footer class="footer bg-dark pt-5">
+            <div class="container">
+                <div class="row pb-2">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget-links widget-light pb-2 mb-4">
+                            <h3 class="widget-title text-light">Бочки</h3>
+                            <ul class="widget-list">
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Цилиндрические вертикальные</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Цилиндрические горизонтальные</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Прямоугольные</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Для подземной установки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget widget-links widget-light pb-2 mb-4">
+                            <h3 class="widget-title text-light">Для монтажа</h3>
+                            <ul class="widget-list">
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Фитинги</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Крышки</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Краны</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Дыхательные клапаны</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Удлиняющие горловины</a></li>
+                                <li class="widget-list-item"><a class="widget-list-link" href="home-fashion-store-v1.html#">Поплавки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="widget pb-2 mb-4">
+                            <h3 class="widget-title text-light pb-1">Будьте в курсе</h3>
+                            <form class="subscription-form validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                                <div class="input-group flex-nowrap">
+                                    <i class="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
+                                    <input class="form-control rounded-start" type="email" name="EMAIL" placeholder="Ваш E-mail" required />
+                                    <button class="btn btn-primary" type="submit" name="subscribe">Подписаться*</button>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                                    <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1" />
+                                </div>
+                                <div class="form-text text-light opacity-50">*Подпишитесь на нашу рассылку, чтобы получать ранние скидки, обновления и информацию о новых продуктах.</div>
+                                <div class="subscription-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 bg-darker">
+                <div class="container">
+                    <div class="row pb-2">
+                        <div class="col-md-6 text-center text-md-start mb-4">
+                            <div class="widget widget-links widget-light">
+                                <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+                                    <li class="widget-list-item me-4"><a class="widget-list-link" href="home-fashion-store-v1.html#">Главная</a></li>
+                                    <li class="widget-list-item me-4"><a class="widget-list-link" href="home-fashion-store-v1.html#">Контакты</a></li>
+                                    <li class="widget-list-item me-4"><a class="widget-list-link" href="home-fashion-store-v1.html#">Доставка и оплата</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end mb-4">
+                            <div class="mb-3">
+                                <a class="btn-social bs-light bs-twitter ms-2 mb-2" href="home-fashion-store-v1.html#"><i class="ci-vk"></i></a>
+                                <a class="btn-social bs-light bs-facebook ms-2 mb-2" href="home-fashion-store-v1.html#"><i class="ci-odnoklassniki"></i></a>
+                                <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="home-fashion-store-v1.html#"><i class="ci-youtube"></i></a>
+                                <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="home-fashion-store-v1.html#"><i class="ci-whatsapp"></i></a>
+                                <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="home-fashion-store-v1.html#"><i class="ci-telegram"></i></a>
+                                <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="home-fashion-store-v1.html#"><i class="ci-viber"></i></a>
+                            </div>
+                            <!-- <img class="d-inline-block" src="img/cards-alt.png" width="187" alt="Payment methods" /> -->
+                        </div>
+                    </div>
+                    <div class="pb-4 fs-xs text-light opacity-50 text-center text-md-start"><a class="text-light" href="https://createx.studio/" target="_blank" rel="noopener">Политика конфиденциальности</a></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Toolbar for handheld devices (Default)-->
+        <div class="handheld-toolbar">
+            <div class="d-table table-layout-fixed w-100">
+                <a class="d-table-cell handheld-toolbar-item" href="account-wishlist.html"
+                    ><span class="handheld-toolbar-icon"><i class="ci-heart"></i></span><span class="handheld-toolbar-label">Избранное</span></a
+                ><a class="d-table-cell handheld-toolbar-item" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)"
+                    ><span class="handheld-toolbar-icon"><i class="ci-menu"></i></span><span class="handheld-toolbar-label">Меню</span></a
+                ><a class="d-table-cell handheld-toolbar-item" href="shop-cart.html"
+                    ><span class="handheld-toolbar-icon"><i class="ci-cart"></i><span class="badge bg-primary rounded-pill ms-1">4</span></span
+                    ><span class="handheld-toolbar-label">15000 ₽</span></a
+                >
+            </div>
+        </div>
+        <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Наверх</span><i class="btn-scroll-top-icon ci-arrow-up"> </i></a>
+        <!-- Vendor scrits: js libraries and plugins-->
+        <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+        <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+        <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="vendor/drift-zoom/dist/Drift.min.js"></script>
+        <script src="vendor/lightgallery/lightgallery.min.js"></script>
+        <script src="vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+        <!-- Main theme script-->
+        <script src="js/theme.min.js"></script>
+    </body>
+</html>
